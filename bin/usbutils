@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'usbutils'
+
+USBUtils::CLI.start
