@@ -20,9 +20,7 @@ module USBUtils
       end
       usb = LIBUSB::Context.new
       usb.devices.each do |usbdev|
-        idvendor  = format("%04x", usbdev.idVendor)
-        idproduct = format("%04x", usbdev.idProduct)
-        device = devices.select {|item| item[:idvendor] == idvendor && item[:idproduct] == idproduct}.first
+        device = devices.select {|item| item[:serial] == usbdev.serial_number}.first
         device[:usbdev] = usbdev if device
       end
       devices

@@ -18,13 +18,13 @@ show command list
 
 show usb devices
 
-    $ usbutils devices
+    $ sudo usbutils devices
     serial=0000:00:06.0	product=OHCI Host Controller	manufacturer=Linux 3.2.0-23-generic ohci_hcd
     serial=01498A4D15005015	product=Galaxy Nexus	manufacturer=samsung
 
 reset(reconnect) usb device
 
-    $ usbutils reset 01498A4D15005015
+    $ sudo usbutils reset 01498A4D15005015
 
 ## Contributing
 

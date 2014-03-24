@@ -12,7 +12,7 @@ module USBUtils
         if options[:detail]
           pp device
         else
-          print "serial=#{device[:serial]}\tproduct=#{device[:product]}\tmanufacturer=#{device[:manufacturer]}\n"
+          print "serial=#{device[:serial]}\tproduct=#{device[:product]}\tmanufacturer=#{device[:manufacturer]}\tusbdev=#{device[:usbdev]}\n"
         end
       end
     end
