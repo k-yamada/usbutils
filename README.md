@@ -26,6 +26,11 @@ reset(reconnect) usb device
 
     $ sudo usbutils reset 01498A4D15005015
 
+
+## usbreset by C lang
+
+http://askubuntu.com/questions/645/how-do-you-reset-a-usb-device-from-the-command-line
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/usbutils/fork )
